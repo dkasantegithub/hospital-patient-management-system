@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-do
 import Home from '../homepage/Home'
 import Register from '../patient/Register'
 import Dailylog from '../patient/Dailylog'
+import PatientInfo from '../patient/PatientInfo'
 //import '../static/home.css'
 
 
@@ -23,6 +24,7 @@ class PageRoute extends Component {
                         <Route exact strict path='/' component={Home}/>
                         <Route exact path='/register' component={Register}/>
                         <Route exact path='/patient-daily-log' component={Dailylog}/>
+                        <Route exact path='/patient-information' component={PatientInfo}/>
                         {/*<Route exact path='/' component={About}/>*/}
                     </Switch>
                 </div>

@@ -7,21 +7,26 @@ class Register extends Component {
             <div className = 'contain container-fluid border mx-center col-4'>
                 <form className='' >
                     <h3 className='cont text-center'>PATIENT REGISTRATION</h3>
+
+                    {/**Last Name */}
                     <div className='form-group form-g'>
                         <label className='text'>Last Name*</label>
                         <input type='text' name='lname' className='form-control' placeholder='Enter last name' required/>
                     </div>
 
+                    {/**Other Name */}
                     <div className='form-group form-g'>
                         <label className='text'>Other Names*</label>
                         <input type='text' name='oname' className='form-control' placeholder='Enter other names' required/>
                     </div>
 
+                    {/**Email */}
                     <div className='form-group form-g'>
                         <label className='text'>Email*</label>
                         <input type='email' name='email' className='form-control' placeholder='asanteyaa@gmail.com' required/>
                     </div>
 
+                    {/**Gender */}
                     <div className='form-group form-g' >
                         <label className='text'>Gender*</label>
                         <select className='custom-select' required>
@@ -30,21 +35,26 @@ class Register extends Component {
                             <option value='female'>Female</option>
                         </select>
                     </div>
+
+                    {/**Contact */}
                     <div className='form-group form-g'>
                         <label className='text'>Contact*</label>
                         <input type='tel' name='contact' className='form-control' maxLength='10' placeholder='054-565-5958' required/>
                     </div>
 
+                    {/**Date-Of-Birth */}
                     <div className='form-group form-g'>
                         <label className='text'>Date-Of-Birth*</label>
                         <input type='date' name='dbirth' className='form-control' required/>
                     </div>
 
+                    {/**Residential-Address */}
                     <div className='form-group form-g'>
                         <label className='text'>Residential Address*</label>
                         <input type='text' name='raddress' className='form-control' placeholder='Santase-kumasi' required/>
                     </div>
 
+                    {/**Submit button */}
                     <div className='button'>
                         <button type="submit" className="btn btn-primary ml-5 pl-5 pr-5">Submit</button>
                     </div>
