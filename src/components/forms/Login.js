@@ -61,11 +61,11 @@ class Login extends Component {
         const {username, password, loginError} = this.state
 
         return (
-            <div className='base-container'>
-                <div className='header'><h3>Login</h3></div>
+            <div className='base-container' ref={this.props.containerRef}>
+                <div className='header'>Login</div>
                 <div className='content'>
                     <div className='image'>
-                        <img src={LoginImg}></img>
+                        <img src={LoginImg} alt='login-img'></img>
                     </div>
                     
                     <form className='form' onSubmit={this.handleSubmit}>

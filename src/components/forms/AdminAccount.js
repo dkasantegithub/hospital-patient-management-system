@@ -93,7 +93,7 @@ class AdminAccount extends Component {
         alert(`Hello ${this.state.username}. Your Email is ${this.state.email} **${this.state.password}`)
         //clear form
         this.setState(initialState)
-        this.setState(initialErrorState)
+        this.setState(initialErrorState)  
         }
     }
     
@@ -102,11 +102,11 @@ class AdminAccount extends Component {
         emailError, passwordError, confirmpasswordError, generalError} = this.state
 
         return (
-            <div className='base-container'>
+            <div className='base-container' ref={this.props.containerRef}>
                 <div className='header'>Create Account</div>
                 <div className='content'>
                     <div className='image'>
-                        <img src={LoginImg} alt='login-img'></img>
+                        <img src={LoginImg} alt='signup-img'></img>
                     </div>
                 <form className='form' onSubmit={this.handleSubmit}>
                     
