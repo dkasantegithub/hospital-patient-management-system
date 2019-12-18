@@ -5,7 +5,7 @@ import '../static/Home.css'
 
 
 class Home extends Component {
-
+    
     onNavigate = () => {this.props.history.push('/register')}
     onNavigateLog = () => {this.props.history.push('/patient-daily-log')}
     onNavigateInfo = () => {this.props.history.push('/patient-information')}
@@ -14,7 +14,7 @@ class Home extends Component {
         return (
         <div>
             <div className ='jambotron bg-container'>
-                <div className='bg-text'>Hopital Patient App</div>
+                <div className='bg-text'>Hospital Patient App</div>
             </div>
 
             {/**Link to patient registration */}
